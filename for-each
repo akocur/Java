@@ -1,0 +1,23 @@
+class Test {
+	public static void main(String[] args) throws java.io.IOException {
+
+		int array[]={1,2,3,4,5,6,7,8,9,10};
+		int sum=0;
+
+
+		System.out.println("Original array: ");
+		for (int i : array) {
+			System.out.print(i+" ");
+
+			sum+=i;
+		}
+	
+		System.out.println("\nsum = "+sum);
+
+		System.out.println("After attempt to change iteration var: ");
+		for (int i : array) {
+			i+=10;
+			System.out.print(i+" ");
+		}
+	}
+}
